@@ -46,3 +46,10 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.7'
   gem 'capybara'
 end
+
+
+gem "selenium-webdriver", "~> 3.141"
+
+gem "puma", "~> 3.12"
+
+gem "geckodriver-helper", "~> 0.23.0"

@@ -1,7 +1,12 @@
 require 'rails_helper'
 require 'capybara/rspec'
 
+
 describe "the song form", :type => :feature do
+  before do
+    Capybara.current_driver = :selenium
+  end
+
   it "creates a song on submit" do
     visit '/songs/new'
     fill_in :song_title, with: 'Little Earthquakes'
